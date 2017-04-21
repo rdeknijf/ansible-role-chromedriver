@@ -1,0 +1,17 @@
+---
+dependencies: []
+galaxy_info:
+  author: Rutger de Knijf
+  description: Installs a specifiable version of Chromedriver
+  company: De Knijf ICT
+  license: BSD
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - utopic
+        - vivid
+        - wily
+  galaxy_tags:
+    - Chromedriver
