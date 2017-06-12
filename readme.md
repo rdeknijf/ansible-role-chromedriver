@@ -30,4 +30,3 @@ Author Information
 ------------------
 Rutger de Knijf
 <rutger@deknijf.com>
-
