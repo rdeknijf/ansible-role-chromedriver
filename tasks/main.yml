@@ -1,9 +1,13 @@
 ---
-- name: install unzip and ansible requirements
+- name: install requirements
   apt: name={{ item }} cache_valid_time=86400 update_cache=yes
   with_items:
       - unzip
       - python-httplib2
+      - libxi6
+      - libgconf-2-4
+      - libnss3
+      - libfontconfig1
 
 - name: get chromedriver installed version if any
   shell: /usr/local/bin/chromedriver --version | sed -ne 's/[^0-9]*\(\([0-9]\.\)\{0,4\}[0-9][^.]\).*/\1/p'

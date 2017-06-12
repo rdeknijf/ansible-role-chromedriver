@@ -1,0 +1,16 @@
+---
+- hosts: all
+  pre_tasks:
+    - name: Update apt cache.
+      apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
+      changed_when: false
+  roles:
+    - role_under_test
+  tasks:
+    - name: run chromdriver version
+      command: chromedriver --version
+      register: chromedriver_version
+      changed_when: "chromedriver_version.rc != 0"
+    - debug:
+        msg: "{{ chromedriver_version }}"
