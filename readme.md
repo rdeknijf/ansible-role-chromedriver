@@ -1,5 +1,7 @@
 # Ansible Role: Chromedriver
 
+[![Build Status](https://travis-ci.org/rdeknijf/ansible-role-chromedriver.svg?branch=master)](https://travis-ci.org/rdeknijf/ansible-role-chromedriver)
+
 Installs a specifiable version of Chromedriver on Debian based systems
 
 ## Role variables
